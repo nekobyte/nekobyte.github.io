@@ -1,0 +1,122 @@
+body {
+  background: #292929;
+  background: url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+#search {
+  width: 75%;
+  max-width: 560px;
+  height: 45px;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  position: static;
+  margin: auto;
+}
+
+#search input[type=text] {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  color: #FFFFFF;
+  font-size: 18px;
+  width: calc(100% - 45px);
+  height: 45px;
+  padding: 10px;
+  border: 0px solid #FFFFFF;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+}
+
+#search input[type=submit] {
+  color: transparent;
+  font-size: 18px;
+  width:45px;
+  height:45px;
+  border: 0px solid #FFFFFF;
+  background:  rgba(0, 0, 0, 0.85) url("search.svg") no-repeat center;
+  background-size: 35px;
+  position: fixed;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  transition: background .25s;
+  -moz-transition: background .25s;
+  -webkit-transition: background .25s;
+}
+
+#search input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#mainlinks {
+  width: calc(75% + 40px);
+  height: calc(75% + 40px);
+  max-width: 600px;
+  max-height: 600px;
+  position: static;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+
+  margin: auto;
+}
+
+#mainlinks a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+table {
+  width:100%;
+  border-spacing: 20px;
+}
+td {
+  width:30%;
+  position:relative;
+  border: 0px solid #FFFFFF;
+}
+td:after{
+  content:'';
+  display:block;
+  margin-top:100%;
+}
+td .content {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #FFFFFF;
+  text-align:center;
+  transition: background .25s;
+  -moz-transition: background .25s;
+  -webkit-transition: background .25s;
+}
+
+td .content:hover {
+  background: rgba(0, 0, 0, 1);
+}
+
+td .content2 {
+  position:absolute;
+  top:42%;
+  bottom:0;
+  left:0;
+  right:0;
+  color: #FFFFFF;
+  text-align:center;
+  word-wrap: break-word;
+}
